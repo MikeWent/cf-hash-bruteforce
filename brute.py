@@ -39,7 +39,7 @@ else:
 
 print(COLORS.ENDC+'---')
 
-for n in number_generator(0, 1000):
+for n in number_generator(0, CYCLES):
     variant = PHRASE + str(n)
     hashes = get_hashes(variant)
     for hashstr in hashes:
@@ -47,5 +47,5 @@ for n in number_generator(0, 1000):
             print(COLORS.BOLD+COLORS.GREEN+variant+COLORS.ENDC)
             print(hashstr)
             print('---')
-            
+
 print(COLORS.BLUE+'Done!'+COLORS.ENDC)
